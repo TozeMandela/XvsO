@@ -115,14 +115,14 @@ nav.players{
     display: flex;
     justify-content: space-around;
 }
-
+/* 
 .players div{
-}
+} */
 .players div div.col1{
     float: left;
 }
-.players div div.col2{
-}
+/* .players div div.col2{
+} */
 .tabela-cronometragem p{
     text-align: center;
 

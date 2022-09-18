@@ -10,6 +10,8 @@
             el.style.height='130px';
             el.style.lineHeight='115px';
         });
+        doc.querySelector('.win').style.height='390px';
+        doc.querySelector('.win').style.lineHeight='375px'
     }
 
     addPlayer(data);

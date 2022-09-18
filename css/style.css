@@ -1,0 +1,159 @@
+:root {
+    --p0: #50A;
+    --p1: rgba(61, 1, 121, 0.719);
+}
+*{
+    font-family: 'Nabla', cursive;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--p0);
+}
+h1{
+    text-align: center;
+    font-size: 6em;
+}
+h1 p{
+    margin-top: -100;
+    font-size: 0.3em;
+}
+h1 a div{
+    height: 300px;
+    line-height: 450px;
+}
+
+h1 a:hover{
+    border: 1px solid black;
+    display: inline-block;
+    background-color: var(--p1);
+    width: 300px;
+    height: 300px;
+    line-height: 450px;
+    border-radius: 200px;
+    padding-left: 30px;
+    transition: 1s;
+}
+.dados-do-jogo{
+    display: flex;
+    min-width: 450px;
+    height: 300px;
+    overflow: hidden;
+    justify-content: center;
+}
+.video{
+    background-color: var(--p1);
+    padding: 10px;
+    border-radius: 10px;
+}
+select{
+    list-style: none;
+    font-style: none;
+    text-decoration: none;
+    background: none;
+    margin-top: 8px;
+    border-radius: 10px;
+    padding: 8px;
+}
+button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(36, 120, 146);
+}
+button:hover{
+    transition: 1s;
+    background: rgb(54, 177, 214);
+
+}
+.row{
+    display: flex;
+    justify-content: baseline;
+}
+.principal ,.principal1{
+    display: flex;
+    justify-content: center;
+}
+.principal div{
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    font-size: 10em;
+    text-align: center;
+}
+.q1{
+    background-color: red;
+}
+.q2{
+    background-color: rgb(200, 178, 223);
+}
+.q3{
+    background-color: rgb(243, 207, 128);
+}
+.q4{
+    background-color: rgb(220, 223, 178);
+}
+.q5{
+    background-color: rgb(61, 99, 110);
+}
+.q6{
+    background-color: rgb(95, 111, 204);
+}
+.q7{
+    background-color: rgb(235, 67, 170);
+}
+.q8{
+    background-color: rgb(223, 178, 193);
+}
+.q9{
+    background-color: rgb(134, 17, 26);
+}
+
+nav.players{
+    display: flex;
+    justify-content: space-around;
+}
+
+.players div{
+}
+.players div div.col1{
+    float: left;
+}
+.players div div.col2{
+}
+.tabela-cronometragem p{
+    text-align: center;
+
+}
+.players div div.col4 p{
+    text-align: end;
+}
+footer p abbr{
+    text-decoration: none;
+    list-style: none;
+}
+footer p{
+
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: bisque;
+}
+.principal1{
+    display: none;
+}
+
+.win{
+    background-color: rgba(255, 255, 255, 0.644);
+    width: 600px;
+    height: 600px;
+    line-height: 100px;
+    position: relative;
+    margin: auto;
+    padding: auto;
+    top: -605px;
+}
+nav article div{
+    text-align: center;
+}

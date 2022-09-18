@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+    <title>Jogo - X/O</title>
+</head>
+<body>
+  
+    <audio >
+        <source src="../audio/y2mate.com - Trilhas Sonoras Lindas e Relaxantes em Games  possível ASMR   Relaxing Music in Games.mp3" type="audio/mpeg">
+    </audio>
+    <nav class="players">
+        <div class="X">
+            <div class="col1">
+                <img src="../assets/jogador/p1.png" alt="icon playerOne">
+            </div>
+            <div class="col2"> 
+                <p>player x</p>
+            </div>
+        </div>
+
+        <div class="tabela-cronometragem">
+            <div class="col2"> 
+                <p>00 : 00 : 00</p>
+                <p class="indicador"><img src="../assets/indicador/mE.png" alt="" width="50"></p>
+                <p><span class="empate">00</span><br>empates</p>
+                <p><span class="pontoX">00</span> - <bdo dir="rtl">pts</bdo></p>
+                <p>pts - <span class="pontoO">00</span></p>
+                <p><button>pause</button> | <button>play</button> | <button>restart</button></p>
+            </div>
+        </div>
+
+        <div class="O">
+            <div class="col3">
+                <img src="../assets/jogador/p2.png" alt="icon playerOne">
+            </div>
+            <div class="col4"> 
+                <p>Player O</p>
+            </div>
+        </div>
+    </nav>
+    <main class="principal">
+
+        <aside class="arena">
+
+            <section class="row">
+                <div class="q1 1" data-id="[0,0]">
+                </div>
+                <div class="q2 2" data-id="[0,1]">
+                </div>
+                <div class="q3 3" data-id="[0,2]">
+                </div>
+            </section>
+
+            <section class="row">
+                <div class="q4 4" data-id="[1,0]">
+                </div>
+                <div class="q5 5" data-id="[1,1]">
+                </div>
+                <div class="q6 6" data-id="[1,2]">
+                </div>
+            </section>
+
+        <section class="row">
+                <div class="q7 7" data-id="[2,0]">
+                </div>
+                <div class="q8 8" data-id="[2,1]">
+                </div>
+                <div class="q9 9" data-id="[2,2]">
+                </div>
+        </section>
+            
+        </aside>
+
+    </main>
+    <nav class="principal1">
+        <article class="win">
+            <div>
+                <img src="../assets/vencedor/winning-dance.gif" alt="" height="200">
+            </div>
+            <h1 style="color: aquamarine;"> <span class="venceu">jogador</span><br>venceu</h1>
+        </article>
+    </nav>
+    <footer>
+        <p>
+            copyright&copy; by: <abbr title="feito por Tozé Mandela">Dev Mandela-Jr &trade;</abbr>
+        </p>
+    </footer>
+    <script src="../js/Jogo.js"></script>
+</body>
+</html>

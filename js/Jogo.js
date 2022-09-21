@@ -120,6 +120,7 @@
 
 /* add se o primeiro jogador estará a usar o X ou o bola */
 function addPlayer (data){
+    console.log('data,length= ',data.length)
     switch (data.length) {
         case 3:
             doc.querySelector('.col2 p').innerHTML = `player ${data[1]}` ;

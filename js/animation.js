@@ -7,6 +7,15 @@
         let idClearInterval;
         let arr = new Array();
         let isVSplayer = false;
+        let haveSound = true;
+        let musica = doc.querySelector('audio');
+        let soundIcon = doc.querySelector('.activ img')||'';
+
+        itsPlaying(haveSound,musica);
+
+        soundIcon.addEventListener('click', ()=>{
+           itsPlaying(haveSound,musica); 
+        })
 
         localStorage.setItem('data',JSON.stringify([]));
         localStorage.setItem('pX',JSON.stringify(null));
@@ -45,9 +54,18 @@
                 localStorage.setItem('data',JSON.stringify(arr));
                 win.location.href='../src/jogo.html';
             })
+        } 
+        /* add sounds */
+        function itsPlaying(control, sound) {
+            if(control){
+                sound.pause();
+                soundIcon.src = '../audio/icone/no-son.png';
+                haveSound = false;
+            }else{
+                sound.play();
+                soundIcon.src = '../audio/icone/sons.png';
+                haveSound = true;
+            }
         }
 
-        
-
-    }
-    )(window, document)
+    })(window, document)

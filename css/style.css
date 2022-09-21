@@ -248,5 +248,9 @@ nav article nav{
     line-height: 30px;
     font-size: 2em;
 }
+.sons .activ{
+    text-align: end;
+    padding: 10px;
+}
 
 }

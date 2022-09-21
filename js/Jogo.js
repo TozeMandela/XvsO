@@ -5,6 +5,8 @@
     let paleta = firstToGo(data[2]);
     let jogadas = [['1','2','3'],['4','5','6'],['7','8','9']];
 
+    console.log('paleta= ',paleta[1], data[1]);
+
     if(win.innerHeight<675){
         $campos.forEach(el => {
             el.style.height='130px';
@@ -53,7 +55,6 @@
             preencherArrey(Matrix,pos,paleta[paleta.length-1]);
 
             el.style.backgroundColor = '#89E0FA';
-            el.style.border = '1px solid black';
             el.innerHTML = `${paleta.pop()}`;
         }
     }
@@ -138,7 +139,7 @@ function addPlayer (data){
 /* dá a paleta inicial do jogo */
     function firstToGo(p){
         if(p=='X') return ['X','O','X','O','X','O','X','O','X'];
-
+        console.log('P= ', p)
         if(p=='O') return ['O','X','O','X','O','X','O','X','O'];
     }
 
